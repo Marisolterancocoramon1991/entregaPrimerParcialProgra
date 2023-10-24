@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "896bcf1f-148f-4ed0-9bdd-df8541efc154",
+		"name": "primerParcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29810521"
+	},
+	"item": [
+		{
+			"name": "alta cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "roca",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "brive",
+							"type": "text"
+						},
+						{
+							"key": "tipoDocumento",
+							"value": "pasaporte",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "efeeff@rgrgrg",
+							"type": "text"
+						},
+						{
+							"key": "tipoCliente",
+							"value": "individual",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "belgica",
+							"type": "text"
+						},
+						{
+							"key": "ciudad",
+							"value": "hamburgo",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "23132151",
+							"type": "text"
+						},
+						{
+							"key": "fotoPerfil",
+							"type": "file",
+							"src": "/C:/Users/kervi/OneDrive/Imágenes/Capturas de pantalla/2022-11-26 (2).png"
+						},
+						{
+							"key": "numeroDocumento",
+							"value": "13515132135",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=clienteAlta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "clienteAlta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultas reserva b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=consultarReservas&listar=b&numeroDeCliente=609136",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "consultarReservas"
+						},
+						{
+							"key": "listar",
+							"value": "b"
+						},
+						{
+							"key": "numeroDeCliente",
+							"value": "609136"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reservar habitacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipoCliente",
+							"value": "corporativo",
+							"type": "text"
+						},
+						{
+							"key": "numeroCliente",
+							"value": "609136",
+							"type": "text"
+						},
+						{
+							"key": "fechaDeEntrada",
+							"value": "12-11-2023",
+							"type": "text"
+						},
+						{
+							"key": "fechaDeSalida",
+							"value": "15-11-2023",
+							"type": "text"
+						},
+						{
+							"key": "tipoHabitacion",
+							"value": "Simple",
+							"type": "text"
+						},
+						{
+							"key": "importeTotalReserva",
+							"value": "40000",
+							"type": "text"
+						},
+						{
+							"key": "fotoReserva",
+							"type": "file",
+							"src": "/C:/Users/kervi/OneDrive/Imágenes/Capturas de pantalla/2022-11-07.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=reservaHabitacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "reservaHabitacion"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipoCliente",
+							"value": "individual",
+							"type": "text"
+						},
+						{
+							"key": "numeroCliente",
+							"value": "760040",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=consultarCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "consultarCliente"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar reserva c",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=consultarReservas&listar=c&fechaUno=12-11-2023&fechaDos=22-12-2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "consultarReservas"
+						},
+						{
+							"key": "listar",
+							"value": "c"
+						},
+						{
+							"key": "fechaUno",
+							"value": "12-11-2023"
+						},
+						{
+							"key": "fechaDos",
+							"value": "22-12-2023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar reserva a",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=consultarReservas&listar=a&fecha=12-11-2023&tipoHabitacion=Simple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "consultarReservas"
+						},
+						{
+							"key": "listar",
+							"value": "a"
+						},
+						{
+							"key": "fecha",
+							"value": "12-11-2023"
+						},
+						{
+							"key": "tipoHabitacion",
+							"value": "Simple"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESERVA D ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=consultarReservas&tipoHabitacion=Doble&listar=d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "consultarReservas"
+						},
+						{
+							"key": "tipoHabitacion",
+							"value": "Doble"
+						},
+						{
+							"key": "listar",
+							"value": "d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{\"numeroCliente\": 609136, \"nombre\": \"montaña\", \"apellido\": \"Doe\", \"tipoDocumento\": \"DNI\", \"numeroDocumento\": \"12345678\", \"mail\": \"johndoe@example.com\", \"tipoCliente\": \"corporativo\", \"pais\": \"Argentina\", \"ciudad\": \"Buenos Aires\", \"telefono\": \"1234567890\"}"
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=modificarCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "modificarCliente"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelar Reserva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipoCliente",
+							"value": "individual",
+							"type": "text"
+						},
+						{
+							"key": "numeroCliente",
+							"value": "609136",
+							"type": "text"
+						},
+						{
+							"key": "IdReserva",
+							"value": "409938",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "ocupado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=cancelarReserva",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "cancelarReserva"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ajustes Reserva",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accion",
+						"value": "ajustesReserva",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "IdReserva",
+							"value": "247106",
+							"type": "text"
+						},
+						{
+							"key": "motivo",
+							"value": "devaluacion",
+							"type": "text"
+						},
+						{
+							"key": "importe",
+							"value": "15000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/index.php?accion=ajustesReserva",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "ajustesReserva"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
